@@ -14,14 +14,30 @@ body {
 }
 
 li, p{
-    padding:  10px;
     display: inline;
+}
+
+li{
+    padding:  10px;
     color: #000029;
     font-size: 18px;
 }
 
-#active-btn{
+/* 
+#active-tbh{
     color: #f24c00;
+}  */
+
+li:hover {
+    color: #f24c00;
+}
+
+li:active{
+    border-radius: 1000px;
+    border: 1px solid var(--website-button-bluetiful, #f24c00);
+    padding: 8px 24px;
+    justify-content: right;
+    align-items: right;
 }
 
 #hovered-btn{
