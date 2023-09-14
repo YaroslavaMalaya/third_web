@@ -6,11 +6,11 @@
 
     <link rel="stylesheet" href=
         "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
-    <link rel="stylesheet" id="styles-id" href=""/>
-    <link rel="stylesheet" href="styles2/style2.css"/> 
+    <link rel="stylesheet" id="styles-id" type="text/css" href="styles/style2.css"/>
 </head>
 
 <body>
+    
     <h1 style="color: black;">Table</h1>
     <div class="table-scroll">
         <table>
@@ -452,15 +452,15 @@
         </div>	
     </div>
 
-    <button onclick="updateStylesheetHref('styles2/newstyle1.css')">Get Style1</button>
+    <button onclick="updateStylesheetHref('styles/newstyle1.css')">Get Style1</button>
+    <br/><br>
+    <button onclick="updateStylesheetHref('styles/newstyle2.css')">Get Style2</button>
     <br><br>
-    <button onclick="updateStylesheetHref('styles2/newstyle2.css')">Get Style2</button>
-    <br><br>
-    <button onclick="updateStylesheetHref('styles2/newstyle3.css')">Get Style3</button>
+    <button onclick="updateStylesheetHref('styles/newstyle3.css')">Get Style3</button>
 
     <script>
         function updateStylesheetHref(newHref) {
-            let stylesheet = document.getElementById("styles-id");
+            var stylesheet = document.getElementById('styles-id');
             if (stylesheet) {
                 stylesheet.href = newHref;
             } else {
