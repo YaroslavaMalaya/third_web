@@ -1,0 +1,36 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.content {
+    align-self: center;
+    width: 70%;
+	height: 400px;
+	overflow-x: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+table {
+	width: 70%;
+	table-layout: fixed;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	padding: 10px 15px;
+	background: #fff700;
+	font-size: 28px;
+    font-style: italic;
+}
+
+td {
+    background: #ebecb8;
+	text-align: left;
+	padding: 10px 15px;
+	font-size: 22px;
+	vertical-align: top;
+}
